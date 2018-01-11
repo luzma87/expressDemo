@@ -9,6 +9,7 @@ const port = 8000;
 
 app.use(bodyParser.urlencoded({extended : true}));
 
+// https://medium.freecodecamp.org/building-a-simple-node-js-api-in-under-30-minutes-a07ea9e390d2
 MongoClient.connect(db.url, (err, database) => {
     if (err) {
         return console.log(err)
